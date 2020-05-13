@@ -111,9 +111,8 @@ function _handleReverse (basePath, options) {
  */
 function _handleReverseFile (basePath, options) {
 	options = getRevOptions();
-	window.alert("Hello world");
 	if (!basePath)  {
-
+		var filePath = app.dialogs.showOpenDialog("Select a class file...")
 	}
 }
 
