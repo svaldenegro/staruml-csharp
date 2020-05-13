@@ -84,7 +84,7 @@ function _handleGenerate (base, path, options) {
 }
 
 /**
- * Command Handler for C# Reverse
+ * Command Handler for C# Reverse Folder
  *
  * @param {string} basePath
  * @param {Object} options
@@ -102,6 +102,21 @@ function _handleReverse (basePath, options) {
   }
 }
 
+
+/**
+ * Command Handler for C# Reverse File
+ *
+ * @param {string} basePath
+ * @param {Object} options
+ */
+function _handleReverseFile (basePath, options) {
+	options = getRevOptions();
+	window.alert("Hello world");
+	if (!basePath)  {
+
+	}
+}
+
 /**
  * Popup PreferenceDialog with C# Preference Schema
  */
@@ -113,6 +128,7 @@ function init () {
   app.commands.register('csharp:generate', _handleGenerate)
   app.commands.register('csharp:reverse', _handleReverse)
   app.commands.register('csharp:configure', _handleConfigure)
+  app.commands.register('csharp:reverseFile', _handleReverseFile)
 }
 
 exports.init = init
