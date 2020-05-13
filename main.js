@@ -112,7 +112,15 @@ function _handleReverse (basePath, options) {
 function _handleReverseFile (basePath, options) {
 	options = getRevOptions();
 	if (!basePath)  {
-		var filePath = app.dialogs.showOpenDialog("Select a class file...")
+    var filters = [
+      { name: "Text Files", extensions: [ "txt" ] }
+    ]
+		var file = app.dialogs.showOpenDialog("Select a class file...", null, filters);
+    if (file && file.length > 0) {
+      basePath = file[0]
+      codeAnalyzer.analyze(basePath, options)
+    }
+
 	}
 }
 

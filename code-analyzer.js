@@ -1044,4 +1044,12 @@ function analyze (basePath, options) {
   csharpAnalyzer.analyze(options)
 }
 
+function analyzeFile(filePath, options) {
+  var csharpAnalyzer = new CSharpCodeAnalyzer();
+
+  function visit(base) {
+    
+  }
+}
+
 exports.analyze = analyze

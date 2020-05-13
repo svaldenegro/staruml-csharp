@@ -2,10 +2,10 @@
   "name": "staruml.csharp",
   "title": "C#",
   "description": "C# code generation and reverse engineering.",
-  "homepage": "https://github.com/staruml/staruml-csharp",
+  "homepage": "https://github.com/svaldenegro/staruml-csharp",
   "issues": "https://github.com/staruml/staruml-csharp/issues",  
   "keywords": ["csharp"],
-  "version": "0.9.4",
+  "version": "0.9.5",
   "author": {
     "name": "Dongjoon Lee",
     "email": "joon1251@gmail.com",
